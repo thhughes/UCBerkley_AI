@@ -1,0 +1,2504 @@
+<!DOCTYPE html>
+<!-- saved from url=(0135)https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/ -->
+<html lang="en" class=" supports-js supports-fontface supports-generatedcontent fontawesome"><!--<![endif]--><head dir="ltr"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><style type="text/css">.fontawesome.supports-generatedcontent .icon-fallback-text .icon { display: inline-block; }
+.fontawesome.supports-generatedcontent .icon-fallback-text .text { clip: rect(0 0 0 0); overflow: hidden; position: absolute; height: 1px; width: 1px; }
+.fontawesome .icon-fallback-glyph .icon:before { font-size: 1em; font-size: inherit; line-height: 1; line-height: inherit; }</style><script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/1beac94c95"></script><script src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/nr-768.min.js"></script><script type="text/javascript" async="" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/linkid.js"></script><script type="text/javascript" async="" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/gtm.js"></script><script type="text/javascript" async="" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/analytics.js"></script><script type="text/javascript" async="" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/analytics.min.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XA4GVl5ACwAEV1JQAA=="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=s(e),f=c.length,u=i(a,o,r),d=0;f>d;d++)c[d].apply(u,n);return u}function a(t,e){f[t]=s(t).concat(e)}function s(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:s,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,s){try{c?c-=1:r("err",[s||new UncaughtException(t,e,n)])}catch(f){try{r("ierr",[f,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof a?a.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=window.onerror,s=!1,c=0;t("loader").features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(f){"stack"in f&&(t(1),t(2),"addEventListener"in window&&t(3),window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)&&t(4),s=!0)}i.on("fn-start",function(){s&&(c+=1)}),i.on("fn-err",function(t,e,r){s&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){s&&!this.thrown&&c>0&&(c-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:11,2:10,3:8,4:12,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){if(window.addEventListener){var e=t("handle"),n=t("ee");t(1),window.addEventListener("click",function(){e("inc",["ck"])},!1),window.addEventListener("hashchange",function(){e("inc",["hc"])},!1),n.on("pushState-start",function(){e("inc",["ps"])})}},{1:9,ee:"QJf3ax",handle:"D5DuLP"}],6:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],7:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=Event;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1),window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:11,2:10,3:9,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],8:[function(t,e){function n(t){i.inPlace(t,["addEventListener","removeEventListener"],"-",r)}function r(t){return t[1]}var o=t("ee").create(),i=t(1)(o),a=t("gos");if(e.exports=o,n(window),"getPrototypeOf"in Object){for(var s=document;s&&!s.hasOwnProperty("addEventListener");)s=Object.getPrototypeOf(s);s&&n(s);for(var c=XMLHttpRequest.prototype;c&&!c.hasOwnProperty("addEventListener");)c=Object.getPrototypeOf(c);c&&n(c)}else XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&n(XMLHttpRequest.prototype);o.on("addEventListener-start",function(t,e){function n(){return s}if(t[1]){var r=t[1];if("function"==typeof r){var s=a(r,"nr@wrapped",function(){return i(r,"fn-",n,r.name||"anonymous")});this.wrapped=t[1]=s,o.emit("initEventContext",[t,e],this.wrapped)}else"function"==typeof r.handleEvent&&i.inPlace(r,["handleEvent"],"fn-")}}),o.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],9:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],10:[function(t,e){var n=t("ee").create(),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){function r(){return a}this.ctx={};var a={"nr@context":this.ctx};o.emit("initTimerContext",[t,n],a),t[0]=i(t[0],"fn-",r,n)}var o=t("ee").create(),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],12:[function(t,e){function n(){f.inPlace(this,p,"fn-",o)}function r(t,e){f.inPlace(e,["onreadystatechange"],"fn-")}function o(t,e){return e}function i(t,e){for(var n in t)e[n]=t[n];return e}var a=t("ee").create(),s=t(1),c=t(2),f=c(a),u=c(s),d=window.XMLHttpRequest,p=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"];e.exports=a,window.XMLHttpRequest=function(t){var e=new d(t);try{a.emit("new-xhr",[],e),e.hasOwnProperty("addEventListener")&&u.inPlace(e,["addEventListener","removeEventListener"],"-",o),e.addEventListener("readystatechange",n,!1)}catch(r){try{a.emit("internal-error",[r])}catch(i){}}return e},i(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,f.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",o),a.on("send-xhr-start",r),a.on("open-xhr-start",r)},{1:8,2:26,ee:"QJf3ax"}],13:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var i=0;c>i;i++)t.removeEventListener(s[i],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var a=t.responseType,f="arraybuffer"===a||"blob"===a||"json"===a?t.response:t.responseText,u=n(f);if(u&&(r.rxSize=u),this.sameOrigin){var d=t.getResponseHeader("X-NewRelic-App-Data");d&&(e.cat=d.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,o("xhr",[e,r,this.startTime])}}}function n(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function r(t,e){var n=i(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}if(window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent)){t("loader").features.xhr=!0;var o=t("handle"),i=t(2),a=t("ee"),s=["load","error","abort","timeout"],c=s.length,f=t(1),u=window.XMLHttpRequest;t(4),t(3),a.on("new-xhr",function(){this.totalCbs=0,this.called=0,this.cbTime=0,this.end=e,this.ended=!1,this.xhrGuids={}}),a.on("open-xhr-start",function(t){this.params={method:t[0]},r(this,t[1]),this.metrics={}}),a.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),a.on("send-xhr-start",function(t,e){var r=this.metrics,o=t[0],i=this;if(r&&o){var f=n(o);f&&(r.txSize=f)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{a.emit("internal-error",[n])}catch(r){}}};for(var u=0;c>u;u++)e.addEventListener(s[u],this.listener,!1)}),a.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),a.on("xhr-load-added",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),a.on("xhr-load-removed",function(t,e){var n=""+f(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),a.on("addEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-added",[t[1],t[2]],e)}),a.on("removeEventListener-end",function(t,e){e instanceof u&&"load"===t[0]&&a.emit("xhr-load-removed",[t[1],t[2]],e)}),a.on("fn-start",function(t,e,n){e instanceof u&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),a.on("fn-end",function(t,e){this.xhrCbStart&&a.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:14,3:12,4:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],14:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");return!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname),r.sameOrigin=!e.hostname||e.hostname===document.domain&&e.port===n.port&&e.protocol===n.protocol,r}},{}],15:[function(t,e){function n(t){return function(){r(t,[(new Date).getTime()].concat(i(arguments)))}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(t,e){window.NREUM[e]=n("api-"+e)}),e.exports=window.NREUM},{1:24,2:25,handle:"D5DuLP"}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):void(r.q&&(r.q[t]||(r.q[t]=[]),r.q[t].push(e)))}var r=t("ee").create();e.exports=n,n.ee=r,r.q={}},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){e in t||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-768.min.js"},p=e.exports={offset:i(),origin:u,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()])},{1:24,2:15,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,f;try{i=this,n=o(arguments),s=r&&r(n,i)||{}}catch(d){u([d,"",[n,i,a],s])}c(e+"start",[n,i,a],s);try{return f=t.apply(i,n)}catch(p){throw c(e+"err",[n,i,p],s),p}finally{c(e+"end",[n,i,f],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,f(t,nrWrapper),nrWrapper)}function s(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function c(e,n,r){try{t.emit(e,n,r)}catch(o){u([o,e,n,r])}}function f(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){u([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function u(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=s,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,13,7,6,5]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"1beac94c95","agent":"js-agent.newrelic.com/nr-768.min.js","transactionName":"NQQGYUZWDUNSVUMPWQxOIkBaVBdZXFgYBVkXExdQQ1YRVR1AXgNBEVsNW1BSGw==","applicationID":"3343327","errorBeacon":"bam.nr-data.net","applicationTime":1121}</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+  <title>Introduction | Project 1: Search | CS188x_1 Courseware | edX</title>
+
+      <script type="text/javascript">
+        /* immediately break out of an iframe if coming from the marketing website */
+        (function(window) {
+          if (window.location !== window.top.location) {
+            window.top.location = window.location;
+          }
+        })(this);
+      </script>
+
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/i18n.js"></script><style type="text/css"></style>
+
+  <link rel="icon" type="image/x-icon" href="https://d37djvu3ytnwxt.cloudfront.net/static/images/favicon.c074c912999f.ico">
+
+  
+  
+
+    <link href="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-style-vendor.614217745ba0.css" rel="stylesheet" type="text/css">
+
+
+
+  
+  <link rel="stylesheet" href="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-main.a21781fab8d4.css" type="text/css" media="all">
+
+    
+    <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-main_vendor.6efceadddba7.js" charset="utf-8"></script>
+
+
+    
+    <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-application.4ded1a473dec.js" charset="utf-8"></script>
+
+
+
+  <script>
+    window.baseUrl = "https://d37djvu3ytnwxt.cloudfront.net/static/";
+    (function (require) {
+      require.config({
+          baseUrl: window.baseUrl
+      });
+    }).call(this, require || RequireJS.require);
+  </script>
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/require-config.611274bbac52.js"></script>
+
+    
+    <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-modules.0edf675aec10.js" charset="utf-8"></script>
+
+
+
+  
+
+  
+
+    <link href="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-style-course-vendor.d65f103108eb.css" rel="stylesheet" type="text/css">
+
+
+
+
+  
+
+    <link href="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-course.5b5638d506a0.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/jquery.autocomplete.3bd10d7510d2.js"></script>
+<script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/tooltip_manager.c80266d685f1.js"></script>
+
+
+    <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/discussion_vendor.347a9c6c51a4.js" charset="utf-8"></script>
+
+
+
+<link href="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/jquery.autocomplete.09a0b34739a2.css" rel="stylesheet" type="text/css">
+
+  
+
+
+  
+
+  <script src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/1743970571.js"></script>
+
+  <!-- begin Segment -->
+<script type="text/javascript">
+  // Asynchronously load Segment's analytics.js library
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("8fncv13bt5");
+  analytics.page();
+  }}();
+  // Note: user tracking moved to segment-io-footer.html
+</script>
+<!-- end Segment -->
+
+
+  <meta name="path_prefix" content="">
+  <meta name="google-site-verification" content="_mipQ4AtZQDNmbtOkwehQDOgCxUUV2fb_C0b6wbiRHY">
+
+
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="moment" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/moment.min.js"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">.MathJax_Preview .MJXc-math {color: inherit!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">div.MathJax_MathML {text-align: center; margin: .75em 0px; display: block!important}
+.MathJax_MathML {font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+span.MathJax_MathML {display: inline!important}
+.MathJax_mmlExBox {display: block!important; overflow: hidden; height: 1px; width: 60ex; min-height: 0; max-height: none; padding: 0; border: 0; margin: 0}
+[class="MJX-tex-oldstyle"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB}
+[class="MJX-tex-oldstyle-bold"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB; font-weight: bold}
+[class="MJX-tex-caligraphic"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB}
+[class="MJX-tex-caligraphic-bold"] {font-family: MathJax_Caligraphic, MathJax_Caligraphic-WEB; font-weight: bold}
+@font-face /*1*/ {font-family: MathJax_Caligraphic-WEB; src: url('https://cdn.mathjax.org/mathjax/2.5-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf')}
+@font-face /*2*/ {font-family: MathJax_Caligraphic-WEB; font-weight: bold; src: url('https://cdn.mathjax.org/mathjax/2.5-latest/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf')}
+[mathvariant="double-struck"] {font-family: MathJax_AMS, MathJax_AMS-WEB}
+[mathvariant="script"] {font-family: MathJax_Script, MathJax_Script-WEB}
+[mathvariant="fraktur"] {font-family: MathJax_Fraktur, MathJax_Fraktur-WEB}
+[mathvariant="bold-script"] {font-family: MathJax_Script, MathJax_Caligraphic-WEB; font-weight: bold}
+[mathvariant="bold-fraktur"] {font-family: MathJax_Fraktur, MathJax_Fraktur-WEB; font-weight: bold}
+[mathvariant="monospace"] {font-family: monospace}
+[mathvariant="sans-serif"] {font-family: sans-serif}
+[mathvariant="bold-sans-serif"] {font-family: sans-serif; font-weight: bold}
+[mathvariant="sans-serif-italic"] {font-family: sans-serif; font-style: italic}
+[mathvariant="sans-serif-bold-italic"] {font-family: sans-serif; font-style: italic; font-weight: bold}
+@font-face /*3*/ {font-family: MathJax_AMS-WEB; src: url('https://cdn.mathjax.org/mathjax/2.5-latest/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf')}
+@font-face /*4*/ {font-family: MathJax_Script-WEB; src: url('https://cdn.mathjax.org/mathjax/2.5-latest/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf')}
+@font-face /*5*/ {font-family: MathJax_Fraktur-WEB; src: url('https://cdn.mathjax.org/mathjax/2.5-latest/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf')}
+@font-face /*6*/ {font-family: MathJax_Fraktur-WEB; font-weight: bold; src: url('https://cdn.mathjax.org/mathjax/2.5-latest/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf')}
+</style><style type="text/css">.MJXc-script {font-size: .8em}
+.MJXc-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXc-bold {font-weight: bold}
+.MJXc-italic {font-style: italic}
+.MJXc-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-largeop {font-size: 150%}
+.MJXc-largeop.MJXc-int {vertical-align: -.2em}
+.MJXc-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXc-display {display: block; text-align: center; margin: 1em 0}
+.MJXc-math span {display: inline-block}
+.MJXc-box {display: block!important; text-align: center}
+.MJXc-box:after {content: " "}
+.MJXc-rule {display: block!important; margin-top: .1em}
+.MJXc-char {display: block!important}
+.MJXc-mo {margin: 0 .15em}
+.MJXc-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXc-denom {display: inline-table!important; width: 100%}
+.MJXc-denom > * {display: table-row!important}
+.MJXc-surd {vertical-align: top}
+.MJXc-surd > * {display: block!important}
+.MJXc-script-box > *  {display: table!important; height: 50%}
+.MJXc-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXc-script-box > *:last-child > * {vertical-align: bottom}
+.MJXc-script-box > * > * > * {display: block!important}
+.MJXc-mphantom {visibility: hidden}
+.MJXc-munderover {display: inline-table!important}
+.MJXc-over {display: inline-block!important; text-align: center}
+.MJXc-over > * {display: block!important}
+.MJXc-munderover > * {display: table-row!important}
+.MJXc-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXc-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXc-mtr {display: table-row!important}
+.MJXc-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXc-mtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-mlabeledtr {display: table-row!important}
+.MJXc-mlabeledtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mlabeledtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXc-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXc-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXc-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXc-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXc-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXc-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXc-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXc-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXc-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXc-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_CHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style><style type="text/css">.MathJax_Display {text-align: center; margin: 1em 0em; position: relative; display: block!important; text-indent: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; width: 100%}
+.MathJax .merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MathJax .MJX-monospace {font-family: monospace}
+.MathJax .MJX-sans-serif {font-family: sans-serif}
+#MathJax_Tooltip {background-color: InfoBackground; color: InfoText; border: 1px solid black; box-shadow: 2px 2px 5px #AAAAAA; -webkit-box-shadow: 2px 2px 5px #AAAAAA; -moz-box-shadow: 2px 2px 5px #AAAAAA; -khtml-box-shadow: 2px 2px 5px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true'); padding: 3px 4px; z-index: 401; position: absolute; left: 0; top: 0; width: auto; height: auto; display: none}
+.MathJax {display: inline; font-style: normal; font-weight: normal; line-height: normal; font-size: 100%; font-size-adjust: none; text-indent: 0; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0; min-height: 0; border: 0; padding: 0; margin: 0}
+.MathJax img, .MathJax nobr, .MathJax a {border: 0; padding: 0; margin: 0; max-width: none; max-height: none; min-width: 0; min-height: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!important; vertical-align: 0!important}
+.MathJax span {display: inline; position: static; border: 0; padding: 0; margin: 0; vertical-align: 0; line-height: normal; text-decoration: none}
+.MathJax nobr {white-space: nowrap!important}
+.MathJax img {display: inline!important; float: none!important}
+.MathJax * {transition: none; -webkit-transition: none; -moz-transition: none; -ms-transition: none; -o-transition: none}
+.MathJax_Processing {visibility: hidden; position: fixed; width: 0; height: 0; overflow: hidden}
+.MathJax_Processed {display: none!important}
+.MathJax_ExBox {display: block!important; overflow: hidden; width: 1px; height: 60ex; min-height: 0; max-height: none}
+.MathJax .MathJax_EmBox {display: block!important; overflow: hidden; width: 1px; height: 60em; min-height: 0; max-height: none}
+.MathJax .MathJax_HitBox {cursor: text; background: white; opacity: 0; filter: alpha(opacity=0)}
+.MathJax .MathJax_HitBox * {filter: none; opacity: 1; background: transparent}
+#MathJax_Tooltip * {filter: none; opacity: 1; background: transparent}
+@font-face {font-family: MathJax_Blank; src: url('about:blank')}
+.MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body class="ltr view-in-course view-courseware courseware  lang_en"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"></div></div><div id="MathJax_Message" style="display: none;"></div>
+
+<div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip" href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#seq_content">Skip to main content</a>
+
+        
+
+
+
+
+
+
+
+
+
+<header class="global slim" aria-label="Main" role="banner">
+  <div class="wrapper-header nav-container">
+    <h1 class="logo" itemscope="" itemtype="http://schema.org/Organization">
+      <a href="https://www.edx.org/" itemprop="url">
+        
+            <img src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/logo.517a627deaad.png" alt="edX Home Page" itemprop="logo">
+        
+      </a>
+    </h1>
+
+    <h2 class="course-header">
+      <span class="provider">BerkeleyX:</span>
+      <span class="course-number">CS188x_1</span>
+      <span class="course-name">Artificial Intelligence</span>
+    </h2>
+
+
+    <ul class="user">
+      <li class="primary">
+        <a href="https://courses.edx.org/dashboard" class="user-link">
+          <span class="sr">Dashboard for:</span>
+          <div>thhughes</div>
+        </a>
+      </li>
+      <li class="primary">
+        <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#" class="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr">More options dropdown</span> ▾</a>
+        <ul class="dropdown-menu" aria-label="More Options" role="menu">
+          
+            <li><a href="https://courses.edx.org/dashboard">Dashboard</a></li>
+            <li><a href="https://courses.edx.org/u/thhughes">Profile</a></li>
+            <li><a href="https://courses.edx.org/account/settings">Account</a></li>
+          
+          <li><a href="https://courses.edx.org/logout" role="menuitem">Sign Out</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+  </div>
+</header>
+<!--[if lte IE 9]>
+<div class="ie-banner" aria-hidden="true"><strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using <a href="https://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org/firefox" target="_blank">Firefox</a>.</div>
+<![endif]-->
+
+
+
+
+
+
+<div class="help-tab">
+  <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#help-modal" rel="leanModal" role="button">Help</a>
+</div>
+
+<section id="help-modal" class="modal" aria-hidden="true" role="dialog" aria-label="edX Help">
+  <div class="inner-wrapper" id="help_wrapper">
+    <button class="close-modal " tabindex="0">
+      <i class="icon fa fa-remove"></i>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header>
+      <h2>
+	<span class="edx">edX</span> Help
+      </h2>
+      <hr>
+    </header>
+
+
+
+    <p>For <strong>questions on course lectures, homework, tools, or materials for this course</strong>, post in the <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/discussion/forum" target="_blank">course discussion forum</a>.
+    </p>
+
+    <p>Have <strong>general questions about edX</strong>? You can find lots of helpful information in the edX <a href="https://www.edx.org/student-faq" target="_blank">FAQ</a>.
+      </p>
+
+    <p>Have a <strong>question about something specific</strong>? You can contact the edX general support team directly:</p>
+    <hr>
+
+    <div class="help-buttons">
+      <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#" id="feedback_link_problem">Report a problem</a>
+      <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#" id="feedback_link_suggestion">Make a suggestion</a>
+      <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#" id="feedback_link_question">Ask a question</a>
+    </div>
+
+    <p class="note">Please note: The edX support team is English speaking. While we will do our best to address your inquiry in any language, our responses will be in English.</p>
+
+  </div>
+
+  <div class="inner-wrapper" id="feedback_form_wrapper">
+    <button class="close-modal">
+      <i class="icon fa fa-remove"></i>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header></header>
+
+    <form id="feedback_form" class="feedback_form" method="post" data-remote="true" action="https://courses.edx.org/submit_feedback">
+      <div id="feedback_error" class="modal-form-error" tabindex="-1"></div>
+      <label data-field="subject" for="feedback_form_subject">Briefly describe your issue*</label>
+      <input name="subject" type="text" id="feedback_form_subject" aria-required="true">
+      <label data-field="details" for="feedback_form_details">Tell us the details*
+<span class="tip">Include error messages, steps which lead to the issue, etc</span></label>
+      <textarea name="details" id="feedback_form_details" aria-required="true"></textarea>
+      <input name="issue_type" type="hidden">
+      <input name="course_id" type="hidden" value="BerkeleyX/CS188x_1/1T2013">
+      <div class="submit">
+        <input name="submit" type="submit" value="Submit" id="feedback_submit">
+      </div>
+    </form>
+  </div>
+
+  <div class="inner-wrapper" id="feedback_success_wrapper" tabindex="0">
+    <button class="close-modal" tabindex="0">
+      <i class="icon fa fa-remove"></i>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header>
+      <h2>Thank You!</h2>
+      <hr>
+    </header>
+
+    
+    <p>
+    Thank you for your inquiry or feedback.  We typically respond to a request within one business day (Monday to Friday, 14:00 UTC to 22:00 UTC.) In the meantime, please review our <a href="https://www.edx.org/student-faq" target="_blank" id="feedback-faq-link" tabindex="0">detailed FAQs</a> where most questions have already been answered.
+    </p>
+  </div>
+</section>
+
+<script type="text/javascript">
+(function() {
+    var onModalClose = function() {
+            $("#help-modal .close-modal").off("click");
+            $("#lean_overlay").off("click");
+            $("#help-modal").attr("aria-hidden", "true");
+            $('area,input,select,textarea,button').removeAttr('tabindex');
+            $(".help-tab a").focus();
+        },
+        cycle_modal_tab = function(from_element_name, to_element_name) {
+            $(from_element_name).on('keydown', function(e) {
+                var keyCode = e.keyCode || e.which;
+                if (keyCode === 9) {
+                    e.preventDefault();
+                    $(to_element_name).focus();
+                }
+            });
+        };
+
+    $(".help-tab").click(function() {
+        $(".field-error").removeClass("field-error");
+        $("#feedback_form")[0].reset();
+        $("#feedback_form input[type='submit']").removeAttr("disabled");
+        $("#feedback_form_wrapper").css("display", "none");
+        $("#feedback_error").css("display", "none");
+        $("#feedback_success_wrapper").css("display", "none");
+        $("#help_wrapper").css("display", "block");
+        $("#help-modal").attr("aria-hidden", "false");
+        $("#help-modal .close-modal").click(onModalClose);
+        $("#lean_overlay").click(onModalClose);
+        $("#help_wrapper .close-modal").focus();
+    });
+    showFeedback = function(event, issue_type, title, subject_label, details_label) {
+        $("#help_wrapper").css("display", "none");
+        $("#feedback_form input[name='issue_type']").val(issue_type);
+        $("#feedback_form_wrapper").css("display", "block");
+        $("#feedback_form_wrapper header").html("<h2>" + title + "</h2><hr>");
+        $("#feedback_form_wrapper label[data-field='subject']").html(subject_label);
+        $("#feedback_form_wrapper label[data-field='details']").html(details_label);
+        $("#feedback_form_wrapper .close-modal").focus();
+        event.preventDefault();
+    };
+    cycle_modal_tab("#feedback_link_question", "#help_wrapper .close-modal");
+    cycle_modal_tab("#feedback_submit", "#feedback_form_wrapper .close-modal");
+    cycle_modal_tab("#feedback-faq-link", "#feedback_success_wrapper .close-modal");
+    $("#help-modal").on("keydown", function(e) {
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 27) {
+            e.preventDefault();
+            $("#help_wrapper .close-modal").click();
+        }
+    });
+    $("#feedback_link_problem").click(function(event) {
+        showFeedback(
+            event,
+            "problem",
+            "Report a Problem",
+            "Brief description of the problem" + "*",
+            "Details of the problem you are encountering" + "*" + "<span class='tip'>" +
+              "Include error messages, steps which lead to the issue, etc." + "</span>"
+        );
+    });
+    $("#feedback_link_suggestion").click(function(event) {
+        showFeedback(
+            event,
+            "suggestion",
+            "Make a Suggestion",
+            "Brief description of your suggestion" + "*",
+            "Details" + "*"
+        );
+    });
+    $("#feedback_link_question").click(function(event) {
+        showFeedback(
+            event,
+            "question",
+            "Ask a Question",
+            "Brief summary of your question" + "*",
+            "Details" + "*"
+        );
+    });
+    $("#feedback_form").submit(function() {
+        $("input[type='submit']", this).attr("disabled", "disabled");
+        $('area,input,select,textarea,button').attr('tabindex', -1);
+        $("#feedback_form_wrapper .close-modal").focus();
+    });
+    $("#feedback_form").on("ajax:complete", function() {
+        $("input[type='submit']", this).removeAttr("disabled");
+    });
+    $("#feedback_form").on("ajax:success", function(event, data, status, xhr) {
+        $("#feedback_form_wrapper").css("display", "none");
+        $("#feedback_success_wrapper").css("display", "block");
+        $("#feedback_success_wrapper").focus();
+    });
+    $("#feedback_form").on("ajax:error", function(event, xhr, status, error) {
+        $(".field-error").removeClass("field-error").removeAttr("aria-invalid");
+        var responseData;
+        try {
+            responseData = jQuery.parseJSON(xhr.responseText);
+        } catch(err) {
+        }
+        if (responseData) {
+            $("[data-field='"+responseData.field+"']").addClass("field-error").attr("aria-invalid", "true");
+            $("#feedback_error").html(responseData.error).stop().css("display", "block");
+        } else {
+            // If no data (or malformed data) is returned, a server error occurred
+            htmlStr = "An error has occurred.";
+            htmlStr += " " + _.template(
+              "Please {link_start}send us e-mail{link_end}.",
+              {link_start: '<a href="#" id="feedback_email">', link_end: '</a>'},
+              {interpolate: /\{(.+?)\}/g})
+            $("#feedback_error").html(htmlStr).stop().css("display", "block");
+            $("#feedback_email").click(function(e) {
+                mailto = "mailto:" + "bugs@edx.org" +
+                    "?subject=" + $("#feedback_form input[name='subject']").val() +
+                    "&body=" + $("#feedback_form textarea[name='details']").val();
+                window.open(mailto);
+                e.preventDefault();
+            });
+        }
+        // Make change explicit to assistive technology
+        $("#feedback_error").focus();
+    });
+})(this)
+</script>
+
+
+
+
+    <div class="content-wrapper" id="content">
+      
+
+
+
+
+
+
+
+
+
+<script type="text/template" id="image-modal-tpl">
+    <div class="wrapper-modal wrapper-modal-image">
+  <section class="image-link">
+    <%= smallHTML%>
+    <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+      <span class="label">
+        <i class="icon fa fa-arrows-alt fa-large"></i> <%= gettext("Fullscreen") %>
+      </span>
+    </a>
+  </section>
+
+  <section class="image-modal">
+    <section class="image-content">
+      <div class="image-wrapper">
+        <img alt="<%= largeALT %>, <%= gettext('Large') %>" src="<%= largeSRC %>" />
+      </div>
+
+      <a href="#" class="modal-ui-icon action-close" role="button">
+        <span class="label">
+          <i class="icon fa fa-remove fa-large"></i> <%= gettext("Close") %>
+        </span>
+      </a>
+
+      <ul class="image-controls">
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+            <span class="label">
+              <i class="icon fa fa fa-search-plus fa-large"></i> <%= gettext("Zoom In") %>
+            </span>
+          </a>
+        </li>
+
+        <li class="image-control">
+          <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+            <span class="label">
+              <i class="icon fa fa fa-search-minus fa-large"></i> <%= gettext("Zoom Out") %>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </section>
+</div>
+
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<nav class="courseware wrapper-course-material" aria-label="Course Material">
+  <div class="course-material">
+    <ol class="course-tabs">
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware" class="active">
+                 Courseware
+                   <span class="sr">, current location</span>
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/info" class="">
+                 Course Info
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/discussion/forum" class="">
+                 Discussion
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/progress" class="">
+                 Progress
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/20021a0a32d14a31b087db8d4bb582fd/" class="">
+                 Syllabus
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/f5722e0cf4234e4284764db6414b685c/" class="">
+                 Course Policies
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/f57d184a147b4e739b74b01cb73f3caa/" class="">
+                 Course Staff
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/2854ce8feaf04328aa4ca1d19b95ff32/" class="">
+                 Office Hours
+             </a>
+          </li>
+        
+          <li>
+             <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/da534968355145c3839637c0e3c764a2/" class="">
+                 Exams
+             </a>
+          </li>
+      
+    </ol>
+  </div>
+</nav>
+
+
+
+<div class="container">
+  <div class="course-wrapper" role="presentation">
+
+    <div class="course-index">
+
+      <div class="accordion">
+        <nav class="course-navigation" aria-label="Course">
+            
+
+
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-1-child" role="button" class="button-chapter chapter" id="week-1-parent" aria-controls="week-1-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 1">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 1
+    </span>
+</a>
+<div class="chapter-content-container" id="week-1-child" tabindex="-1" role="group" aria-label="Week 1 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/c78976d210314651abb740912d8279bb/b414886f442a41e4b5fd0408de837e53/">
+                <p>Lecture 1:  Introduction (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/c78976d210314651abb740912d8279bb/404f1d9b7a324e41a320d56edf3513f2/">
+                <p>Lecture 1: Introduction (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/c78976d210314651abb740912d8279bb/5bf447e1a55f4699a6e313680f16e9df/">
+                <p>Math Self Diagnostic </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/c78976d210314651abb740912d8279bb/e8c2d3dd71a84472997173f55c98a35c/">
+                <p>Project 0: UNIX/Python Tutorial </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Project 0 </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-2-child" role="button" class="button-chapter chapter active is-open" id="week-2-parent" aria-controls="week-2-child" aria-expanded="true">
+    <span class="group-heading active" aria-label="Week 2 current chapter">
+        <span class="icon fa fa-caret-down" aria-hidden="true"></span>
+        Week 2
+    </span>
+</a>
+<div class="chapter-content-container is-open" id="week-2-child" tabindex="-1" role="group" aria-label="Week 2 submenu">
+    <div class="chapter-menu is-open" style="display: block;">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/7c56230af88d467c9737344e2e76092e/">
+                <p>Lecture 2: Uninformed Search (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/426f699c608b4ee7a6190f0edbeb5cf3/">
+                <p>Lecture 2: Uninformed Search (edited) (continued) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/2888ea31a47d4536856b91d0272b11f8/">
+                <p>Lecture 2: Uninformed Search (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/76f9a53b7aad47638ff968db5938d841/">
+                <p>Lecture 3: Informed Search (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/92bead757c1b4a29b0f3cd6a9c502053/">
+                <p>Lecture 3: Informed Search (edited) (continued) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/1726369b5fd14433a96498696f3919a6/">
+                <p>Lecture 3: Informed Search (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/367b239e4b764465b9ace9b6f6ff3ca7/">
+                <p>Step-By-Step: DFS and BFS </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/9eeaa67e23414033a09f0f4256eeaeac/">
+                <p>Step-By-Step: A* </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/d35abd173ee745dda5417aaa89b97b02/">
+                <p>Homework 1: Search </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item active graded">
+            <a href="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX.html">
+                <p>Project 1: Search <span class="sr"> current section</span></p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Project 1 </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-3-child" role="button" class="button-chapter chapter" id="week-3-parent" aria-controls="week-3-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 3">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 3
+    </span>
+</a>
+<div class="chapter-content-container" id="week-3-child" tabindex="-1" role="group" aria-label="Week 3 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/cc992b6a8ae34c88a371c1fcdf752ac3/">
+                <p>Lecture 4: CSPs (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/6f8a9aab61e44c4b93458e72a6da100b/">
+                <p>Lecture 4: CSPs (edited) (continued) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/6eb1a0bed3c046eabbb619aca405780e/">
+                <p>Lecture 4: CSPs (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/42f851793708458184c10c368ff53fc0/">
+                <p>Lecture 5: CSPs II (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/fcdcbb040166497c9c3fb31bc4639fdf/">
+                <p>Lecture 5: CSPs II (edited) (continued) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/0714e2099763470e841bf30c71f06b2d/">
+                <p>Lecture 5: CSPs II (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/5fab202f219447c79915d6ba6eb08344/0460a6606a3e4630b0b4e913dd88c135/">
+                <p>Homework 2: CSPs </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-4-child" role="button" class="button-chapter chapter" id="week-4-parent" aria-controls="week-4-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 4">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 4
+    </span>
+</a>
+<div class="chapter-content-container" id="week-4-child" tabindex="-1" role="group" aria-label="Week 4 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/8616451481ba41d4a40afcf13bc8ab1c/">
+                <p>Lecture 6: Adversarial Search (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/de5c6a2e24a74795bbdbf17a6bb160c4/">
+                <p>Lecture 6: Adversarial Search (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/7f571bb27af64d838b05cbf371546537/">
+                <p>Lecture 7: Uncertainty and Utilities (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/99a7e848be414edfa5959e7a494aeabe/">
+                <p>Lecture 7: Uncertainty and Utilities (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/dded614399934785863727e7cf4abfa1/">
+                <p>Step-By-Step: Alpha-Beta </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/0356d34a926e4c7199d1d66fd01d89da/">
+                <p>Homework 3: Games </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e388ea8629ff4228845b54d70ffc8afd/52a12229526341c4b605cdd2b5ae295d/">
+                <p>Project 2: Multi-Agent Search </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Project 2 </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-5-child" role="button" class="button-chapter chapter" id="week-5-parent" aria-controls="week-5-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 5">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 5
+    </span>
+</a>
+<div class="chapter-content-container" id="week-5-child" tabindex="-1" role="group" aria-label="Week 5 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/49f4667aceef4ee982cce2250e17d605/99f9c610429f40e1882dd2bfa7deb957/">
+                <p>Lecture 8: Markov Decision Processes (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/49f4667aceef4ee982cce2250e17d605/b50041adaaab4a9db6446ab002a7e6e2/">
+                <p>Lecture 8: Markov Decision Processes (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/49f4667aceef4ee982cce2250e17d605/0c7a5f8e1ceb43b5ae45544511eb11dc/">
+                <p>Lecture 9: Markov Decision Processes II (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/49f4667aceef4ee982cce2250e17d605/cac07ff7ca1842d89b25c6e908b45739/">
+                <p>Lecture 9: Markov Decision Processes II (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/49f4667aceef4ee982cce2250e17d605/25829128a13347cfb8d724e8c348484a/">
+                <p>Homework 4: MDPs </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-6-child" role="button" class="button-chapter chapter" id="week-6-parent" aria-controls="week-6-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 6">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 6
+    </span>
+</a>
+<div class="chapter-content-container" id="week-6-child" tabindex="-1" role="group" aria-label="Week 6 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/aa2fe795e9594a96a18b7cf9a3cbcd21/">
+                <p>Lecture 10: Reinforcement Learning (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/9bb06633b7ea45409b143df982a934a9/">
+                <p>Lecture 10: Reinforcement Learning (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/bacdd072711c44f991c73bd55b8cdd03/">
+                <p>Lecture 11: Reinforcement Learning II (edited) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/507513cbf84b4f058518590d208f1b59/">
+                <p>Lecture 11: Reinforcement Learning II (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/8f12a00e153c437f8e36b0c649af8be3/">
+                <p>Homework 5: Reinforcement Learning </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/41c847d3794141a7acb4f6b1e5904215/">
+                <p>Project 3: Reinforcement Learning </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Project 3 </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/817468c509ef4b64bcb74cd38766ac44/0c0b689a9bab4194b5952ba54e0f7713/">
+                <p>Midterm 1 Preparation </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-7-child" role="button" class="button-chapter chapter" id="week-7-parent" aria-controls="week-7-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 7">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 7
+    </span>
+</a>
+<div class="chapter-content-container" id="week-7-child" tabindex="-1" role="group" aria-label="Week 7 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e07c09452f5845de8277d70512009fa2/4d1a43c6bcc7472db14a00258732cf8d/">
+                <p>Lecture 12: Probability (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/e07c09452f5845de8277d70512009fa2/9f6bb5d00aa74ef39a5b62a83196f067/">
+                <p>Lecture 13: Bayes' Nets - Representation (live) </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-8-child" role="button" class="button-chapter chapter" id="week-8-parent" aria-controls="week-8-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 8">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 8
+    </span>
+</a>
+<div class="chapter-content-container" id="week-8-child" tabindex="-1" role="group" aria-label="Week 8 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/741f4647a714422a8028a776e041071c/57c93f3102a348d5ab0e0712979392f7/">
+                <p>Lecture 14: Bayes' Nets - Independence (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/741f4647a714422a8028a776e041071c/b7b4dc01c237439980ed9658efdbed68/">
+                <p>Step-By-Step: D-Separation </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/741f4647a714422a8028a776e041071c/7d360eb87c6f4746886c2551d5695bba/">
+                <p>Homework 6: Probability and Bayes' Nets </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-9-child" role="button" class="button-chapter chapter" id="week-9-parent" aria-controls="week-9-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 9">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 9
+    </span>
+</a>
+<div class="chapter-content-container" id="week-9-child" tabindex="-1" role="group" aria-label="Week 9 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/e83b8da087dc4430abc105a61f4b6187/">
+                <p>Lecture 15: Bayes' Nets - Inference (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/ef18d10cd8324ae1984b2df59657f02a/">
+                <p>Lecture 16: Bayes' Nets - Sampling (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/5184a107f6784680adf1d6f99b8f67b3/">
+                <p>Step-By-Step: Elimination of One Variable </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/f12ef00c25f64da185a7626969da806c/">
+                <p>Step-By-Step: Variable Elimination </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/3645a874f1a746479d3a1ee0372a83b3/">
+                <p>Step-By-Step: Sampling </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/27d2dfcb04674b3ea873ce83a7e33435/">
+                <p>Step-By-Step: Gibbs Sampling </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/141d66503de5484fb7d26895b67149c1/3f97c7a0e0f240a7af1081e9f7f459fe/">
+                <p>Homework 7: Bayes' Nets: Inference and Sampling </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-10-child" role="button" class="button-chapter chapter" id="week-10-parent" aria-controls="week-10-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 10">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 10
+    </span>
+</a>
+<div class="chapter-content-container" id="week-10-child" tabindex="-1" role="group" aria-label="Week 10 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/a1335497b2a04c0e934ec324563e69aa/3998567963754ec19bf934de75e4f774/">
+                <p>Lecture 17: Decision Diagrams and Value of Perfect Information (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/a1335497b2a04c0e934ec324563e69aa/d536e021c6694647880977112e8ca6c7/">
+                <p>Lecture 18: Hidden Markov Models (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/a1335497b2a04c0e934ec324563e69aa/ca7ba18fa96845b3aa74bd0623bd939f/">
+                <p>Homework 8: VOI, HMMs, and Particle Filtering </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/a1335497b2a04c0e934ec324563e69aa/1d6e5b5229b94619900b0196eae8e024/">
+                <p>Project 4: Ghostbusters </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Project 4 </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-11-child" role="button" class="button-chapter chapter" id="week-11-parent" aria-controls="week-11-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 11">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 11
+    </span>
+</a>
+<div class="chapter-content-container" id="week-11-child" tabindex="-1" role="group" aria-label="Week 11 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/9fa61ebf2e90449cbabb0f649b0469d5/ee6b4209af5d496cb0e80280ee3f649c/">
+                <p>Lecture 19: Speech (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/9fa61ebf2e90449cbabb0f649b0469d5/a498b076bfea42559a6d2b3a34aefc5e/">
+                <p>Lecture 20: Machine Learning - Naive Bayes (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/9fa61ebf2e90449cbabb0f649b0469d5/2fee902a389e47b28e4e2fd5bea45a28/">
+                <p>Step-by-Step: Maximum Likelihood Estimation </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/9fa61ebf2e90449cbabb0f649b0469d5/ed6abd04497440e499f01b185f0f504f/">
+                <p>Step-By-Step: Laplace Smoothing </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-12-child" role="button" class="button-chapter chapter" id="week-12-parent" aria-controls="week-12-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 12">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 12
+    </span>
+</a>
+<div class="chapter-content-container" id="week-12-child" tabindex="-1" role="group" aria-label="Week 12 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/95cdab0f65984c74a2031911fbacc7e8/b1a66fb0b94f4e689a2cd47cc2177bf8/">
+                <p>Lecture 21: Machine Learning - Perceptrons (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/95cdab0f65984c74a2031911fbacc7e8/3794221ac77445febc9875a790fb3141/">
+                <p>Lecture 22: Machine Learning - Kernels and Clustering (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/95cdab0f65984c74a2031911fbacc7e8/d8ccd6c99cba4a81a067202813492eae/">
+                <p>Step-By-Step: Perceptrons </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/95cdab0f65984c74a2031911fbacc7e8/ff81f1aa88f2402586cd3b3a43f3d315/">
+                <p>Homework 9: Machine Learning </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Homework </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/95cdab0f65984c74a2031911fbacc7e8/2eb131fddbe941c59babd8d31f79cba8/">
+                <p>Midterm 2 Preparation </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-13-child" role="button" class="button-chapter chapter" id="week-13-parent" aria-controls="week-13-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 13">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 13
+    </span>
+</a>
+<div class="chapter-content-container" id="week-13-child" tabindex="-1" role="group" aria-label="Week 13 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/7ae96c0c393540379709934ce2fb8d45/c86260eb576047a388e518c6e1b2daf9/">
+                <p>Lecture 23: Machine Learning - Decision Trees and Neural Nets (live) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/7ae96c0c393540379709934ce2fb8d45/6adcf864c9c244ac9a49e5ac151e04ed/">
+                <p>Lecture 24: Advanced Appliations - NLP, Games, Cars (live, Spring 2014) </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/7ae96c0c393540379709934ce2fb8d45/e90b2af8691a4149ae2a59e6e5290041/">
+                <p>Final Contest </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+    
+
+<a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#week-14-child" role="button" class="button-chapter chapter" id="week-14-parent" aria-controls="week-14-child" aria-expanded="false">
+    <span class="group-heading" aria-label="Week 14">
+        <span class="icon fa fa-caret-right" aria-hidden="true"></span>
+        Week 14
+    </span>
+</a>
+<div class="chapter-content-container" id="week-14-child" tabindex="-1" role="group" aria-label="Week 14 submenu">
+    <div class="chapter-menu">
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/51edbfdd877a4d0e8d6109c3b9770849/d0da3640486a400da8c4b190ea534310/">
+                <p>Lecture 25: Advanced Applications: Computer Vision and Robotics </p>
+                
+
+
+            </a>
+        </div>
+        <div class="menu-item  graded">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/51edbfdd877a4d0e8d6109c3b9770849/8de0bc49c4b6453bb3ae0648719b84f2/">
+                <p>Project 5: Classification </p>
+                
+
+
+                <p class="subtitle">
+                        <span class="subtitle-name">Project 5 </span>
+
+                            <span class="menu-icon icon fa fa-pencil-square-o" aria-hidden="true"></span>
+                            <span class="sr">This content is graded</span>
+                </p>
+            </a>
+        </div>
+        <div class="menu-item  ">
+            <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/51edbfdd877a4d0e8d6109c3b9770849/3f505484a2784d4f8d1123f3fe2ad9c5/">
+                <p>Final Exam Preparation </p>
+                
+
+
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        </nav>
+      </div>
+
+    </div>
+    <section class="course-content" id="course-content" role="main" aria-label="Content">
+
+      <div class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="sequential" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_sequential;_6171e5fdfd8645c98cdcdf53dfea1880" data-type="Sequence" data-course-id="BerkeleyX/CS188x_1/1T2013">
+  
+  
+
+<div id="sequence_i4x-BerkeleyX-CS188x_1-sequential-6171e5fdfd8645c98cdcdf53dfea1880" class="sequence" data-id="i4x://BerkeleyX/CS188x_1/sequential/6171e5fdfd8645c98cdcdf53dfea1880" data-position="1" data-ajax-url="/courses/BerkeleyX/CS188x_1/1T2013/xblock/i4x:;_;_BerkeleyX;_CS188x_1;_sequential;_6171e5fdfd8645c98cdcdf53dfea1880/handler/xmodule_handler">
+  <div class="sequence-nav">
+    <button class="sequence-nav-button button-previous disabled" disabled="disabled">
+        <span class="icon fa fa-chevron-prev" aria-hidden="true"></span><span class="sr">Previous</span>
+    </button>
+    <nav class="sequence-list-wrapper" aria-label="Unit">
+      <ol id="sequence-list" style="left: 0px;">
+        <li>
+        <a class="seq_other progress-0 active" data-id="i4x://BerkeleyX/CS188x_1/vertical/4f2701c8cb8349b88152d8b17abb7ab1" data-element="1" href="javascript:void(0);" data-page-title="Introduction" aria-controls="seq_contents_0" id="tab_0" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Introduction</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/8ebe4861626f49cc852121568c5c84ab" data-element="2" href="javascript:void(0);" data-page-title="Welcome to Pacman" aria-controls="seq_contents_1" id="tab_1" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Welcome to Pacman</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/25fd2149c1e644c8b2a89d9bc7f9c988" data-element="3" href="javascript:void(0);" data-page-title="Q1: DFS" aria-controls="seq_contents_2" id="tab_2" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q1: DFS</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/9c91a74f730b41a7877eed66fe5fe2a4" data-element="4" href="javascript:void(0);" data-page-title="Q2: BFS" aria-controls="seq_contents_3" id="tab_3" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q2: BFS</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/6272edb687cf42f0b756b0180dc83ab2" data-element="5" href="javascript:void(0);" data-page-title="Q3: UCS" aria-controls="seq_contents_4" id="tab_4" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q3: UCS</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/141e77949a0f4a88954d91423ddd24f9" data-element="6" href="javascript:void(0);" data-page-title="Q4: A*" aria-controls="seq_contents_5" id="tab_5" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q4: A*</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/8be8da424e1b4833b339724505c1bd1b" data-element="7" href="javascript:void(0);" data-page-title="Q5: Corners" aria-controls="seq_contents_6" id="tab_6" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q5: Corners</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/120be17a6e7f4a3fbd8b5c73dbbd5d29" data-element="8" href="javascript:void(0);" data-page-title="Q6: Heuristics" aria-controls="seq_contents_7" id="tab_7" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q6: Heuristics</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/67891b993ebf4b8c8b905b2b9b2fc506" data-element="9" href="javascript:void(0);" data-page-title="Q7: Eating All The Dots" aria-controls="seq_contents_8" id="tab_8" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q7: Eating All The Dots</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/2587634d637a4335b66233703880275d" data-element="10" href="javascript:void(0);" data-page-title="Q8: Replanning" aria-controls="seq_contents_9" id="tab_9" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Q8: Replanning</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_other inactive progress-0" data-id="i4x://BerkeleyX/CS188x_1/vertical/cfded9cad73e44139bb3293404b389b3" data-element="11" href="javascript:void(0);" data-page-title="Glossary" aria-controls="seq_contents_10" id="tab_10" tabindex="0">
+            <i class="icon fa seq_other" aria-hidden="true"></i>
+            <p><span class="sr">other</span>Glossary</p>
+          </a>
+        </li>
+        <li>
+        <a class="seq_problem inactive progress-none" data-id="i4x://BerkeleyX/CS188x_1/vertical/b61d978623134dd5a0cedb54d5320acd" data-element="12" href="javascript:void(0);" data-page-title="Project 1 Submission" aria-controls="seq_contents_11" id="tab_11" tabindex="0">
+            <i class="icon fa seq_problem" aria-hidden="true"></i>
+            <p><span class="sr">problem</span>Project 1 Submission</p>
+          </a>
+        </li>
+      </ol>
+    <div class="left-shadow" style="opacity: 0;"></div><div class="right-shadow" style="opacity: 0;"></div></nav>
+    <button class="sequence-nav-button button-next">
+        <span class="icon fa fa-chevron-next" aria-hidden="true"></span><span class="sr">Next</span>
+    </button>
+  </div>
+
+  <div class="sr-is-focusable" tabindex="-1"></div>
+
+  <div id="seq_contents_0" aria-labelledby="tab_0" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_4f2701c8cb8349b88152d8b17abb7ab1" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/3f14673476a845bead2b1275dde82b13"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_3f14673476a845bead2b1275dde82b13" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;h2 class="project_title"&gt;Project 1: Search in Pacman&lt;/h2&gt;
+&lt;div class="project"&gt;
+&lt;blockquote&gt;&lt;center&gt;&lt;img src="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/maze.png" width="400px" /&gt;&lt;/center&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;center&gt;All those colored walls,&lt;br /&gt; Mazes give Pacman the blues,&lt;br /&gt; So teach him to search.&lt;/center&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;&lt;a name="Introduction"&gt;&lt;/a&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;In this project, your Pacman agent will find paths through his maze world, both to reach a particular location and to collect food efficiently. You will build general search algorithms and apply them to Pacman scenarios.&lt;/p&gt;
+&lt;p&gt;As in Project 0, this project includes an autograder for you to grade your answers on your machine. This can be run with the command:&lt;/p&gt;
+&lt;pre&gt;python autograder.py&lt;/pre&gt;
+&lt;p&gt;See the autograder tutorial in Project 0 for more information about using the autograder.&lt;/p&gt;
+&lt;p&gt;The code for this project consists of several Python files, some of which you will need to read and understand in order to complete the assignment, and some of which you can ignore. You can download all the code and supporting files as a &lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/search.zip"&gt;zip archive&lt;/a&gt;.&lt;/p&gt;
+&lt;table class="intro" border="0" cellpadding="10"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td colspan="2"&gt;&lt;b&gt;Files you'll edit:&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/search.html"&gt;search.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;text&gt;Where all of your search algorithms will reside.&lt;/text&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/searchAgents.html"&gt;searchAgents.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Where all of your search-based agents will reside.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="2"&gt;&lt;b&gt;Files you might want to look at:&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/pacman.html"&gt;pacman.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The main file that runs Pacman games. This file describes a Pacman GameState type, which you use in this project.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/game.html"&gt;game.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;The logic behind how the Pacman world works. This file describes several supporting types like AgentState, Agent, Direction, and Grid.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/util.html"&gt;util.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Useful data structures for implementing search algorithms.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td colspan="2"&gt;&lt;b&gt;Supporting files you can ignore:&lt;/b&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/graphicsDisplay.html"&gt;graphicsDisplay.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Graphics for Pacman&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/graphicsUtils.html"&gt;graphicsUtils.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Support for Pacman graphics&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/textDisplay.html"&gt;textDisplay.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;ASCII graphics for Pacman&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/ghostAgents.html"&gt;ghostAgents.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Agents to control ghosts&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/keyboardAgents.html"&gt;keyboardAgents.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Keyboard interfaces to control Pacman&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/layout.html"&gt;layout.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Code for reading layout files and storing their contents&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/autograder.html"&gt;autograder.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Project autograder&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/testParser.html"&gt;testParser.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Parses autograder test and solution files&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/testClasses.html"&gt;testClasses.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;General autograding test classes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;test_cases/&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Directory containing the test cases for each question&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/searchTestClasses.html"&gt;searchTestClasses.py&lt;/a&gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;Project 1 specific autograding test classes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Files to Edit and Submit:&lt;/strong&gt; You will fill in portions of &lt;code&gt;&lt;a target="_blank" href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/search.html"&gt;search.py&lt;/a&gt;&lt;/code&gt; and &lt;code&gt;&lt;a target="_blank" href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/searchAgents.html"&gt;searchAgents.py&lt;/a&gt;&lt;/code&gt; during the assignment. You should submit these files with your code and comments. Please &lt;em&gt;do not&lt;/em&gt; change the other files in this distribution or submit any of our original files other than these files.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Evaluation:&lt;/strong&gt; Your code will be autograded for technical correctness. Please &lt;em&gt;do not&lt;/em&gt; change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation -- not the autograder's judgements -- will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Academic Dishonesty:&lt;/strong&gt; We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; &lt;em&gt;please&lt;/em&gt; don't let us down. If you do, we will pursue the strongest consequences available to us.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Getting Help:&lt;/strong&gt; You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours, section, and the discussion forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Discussion:&lt;/strong&gt; Please be careful not to post spoilers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_1" aria-labelledby="tab_1" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_8ebe4861626f49cc852121568c5c84ab" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/98664b3c13ae4defae9611da1131d086"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_98664b3c13ae4defae9611da1131d086" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Welcome"&gt;&lt;/a&gt;Welcome to Pacman&lt;/h3&gt;
+&lt;p&gt;After downloading the code (&lt;code&gt;&lt;a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/search.zip"&gt;search.zip&lt;/a&gt;&lt;/code&gt;), unzipping it, and changing to the directory, you should be able to play a game of Pacman by typing the following at the command line:&lt;/p&gt;
+&lt;pre&gt;python pacman.py&lt;/pre&gt;
+&lt;p&gt;Pacman lives in a shiny blue world of twisting corridors and tasty round treats. Navigating this world efficiently will be Pacman's first step in mastering his domain.&lt;/p&gt;
+&lt;p&gt;The simplest agent in &lt;code&gt;searchAgents.py&lt;/code&gt; is called the &lt;code&gt;GoWestAgent&lt;/code&gt;, which always goes West (a trivial reflex agent). This agent can occasionally win:&lt;/p&gt;
+&lt;pre&gt;python pacman.py --layout testMaze --pacman GoWestAgent&lt;/pre&gt;
+&lt;p&gt;But, things get ugly for this agent when turning is required:&lt;/p&gt;
+&lt;pre&gt;python pacman.py --layout tinyMaze --pacman GoWestAgent&lt;/pre&gt;
+&lt;p&gt;If Pacman gets stuck, you can exit the game by typing CTRL-c into your terminal.&lt;/p&gt;
+&lt;p&gt;Soon, your agent will solve not only &lt;code&gt;tinyMaze&lt;/code&gt;, but any maze you want.&lt;/p&gt;
+&lt;p&gt;Note that &lt;code&gt;pacman.py&lt;/code&gt; supports a number of options that can each be expressed in a long way (e.g., &lt;code&gt;--layout&lt;/code&gt;) or a short way (e.g., &lt;code&gt;-l&lt;/code&gt;). You can see the list of all options and their default values via:&lt;/p&gt;
+&lt;pre&gt;python pacman.py -h&lt;/pre&gt;
+&lt;p&gt;Also, all of the commands that appear in this project also appear in &lt;code&gt;commands.txt&lt;/code&gt;, for easy copying and pasting. In UNIX/Mac OS X, you can even run all these commands in order with &lt;code&gt;bash commands.txt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Note: if you get error messages regarding Tkinter, see &lt;a href="http://tkinter.unpythonic.net/wiki/How_to_install_Tkinter"&gt;this page&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_2" aria-labelledby="tab_2" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_25fd2149c1e644c8b2a89d9bc7f9c988" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/bd390cf28ed84f44acaa34859f3540b2"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_bd390cf28ed84f44acaa34859f3540b2" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q1"&gt;&lt;/a&gt;Question 1 (3 points): Finding a Fixed Food Dot using Depth First Search&lt;/h3&gt;
+&lt;p&gt;In &lt;code&gt;searchAgents.py&lt;/code&gt;, you'll find a fully implemented &lt;code&gt;SearchAgent&lt;/code&gt;, which plans out a path through Pacman's world and then executes that path step-by-step. The search algorithms for formulating a plan are not implemented -- that's your job. As you work through the following questions, you might find it useful to refer to the object glossary (the second to last tab in the navigation bar above).&lt;/p&gt;
+&lt;p&gt;First, test that the &lt;code&gt;SearchAgent&lt;/code&gt; is working correctly by running:&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l tinyMaze -p SearchAgent -a fn=tinyMazeSearch&lt;/pre&gt;
+&lt;p&gt;The command above tells the &lt;code&gt;SearchAgent&lt;/code&gt; to use &lt;code&gt;tinyMazeSearch&lt;/code&gt; as its search algorithm, which is implemented in &lt;code&gt;search.py&lt;/code&gt;. Pacman should navigate the maze successfully.&lt;/p&gt;
+&lt;p&gt;Now it's time to write full-fledged generic search functions to help Pacman plan routes! Pseudocode for the search algorithms you'll write can be found in the lecture slides. Remember that a search node must contain not only a state but also the information necessary to reconstruct the path (plan) which gets to that state.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;em&gt;Important note:&lt;/em&gt;&lt;/b&gt; All of your search functions need to return a list of &lt;em&gt;actions&lt;/em&gt; that will lead the agent from the start to the goal. These actions all have to be legal moves (valid directions, no moving through walls).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;em&gt;Important note:&lt;/em&gt;&lt;/b&gt; Make sure to &lt;b&gt;use&lt;/b&gt; the &lt;code&gt;Stack&lt;/code&gt;, &lt;code&gt;Queue&lt;/code&gt; and &lt;code&gt;PriorityQueue&lt;/code&gt; data structures provided to you in &lt;code&gt;util.py&lt;/code&gt;! These data structure implementations have particular properties which are required for compatibility with the autograder.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; Each algorithm is very similar. Algorithms for DFS, BFS, UCS, and A* differ only in the details of how the fringe is managed. So, concentrate on getting DFS right and the rest should be relatively straightforward. Indeed, one possible implementation requires only a single generic search method which is configured with an algorithm-specific queuing strategy. (Your implementation need &lt;em&gt;not&lt;/em&gt; be of this form to receive full credit).&lt;/p&gt;
+&lt;p&gt;Implement the depth-first search (DFS) algorithm in the &lt;code&gt;depthFirstSearch&lt;/code&gt; function in &lt;code&gt;search.py&lt;/code&gt;. To make your algorithm &lt;em&gt;complete&lt;/em&gt;, write the graph search version of DFS, which avoids expanding any already visited states.&lt;/p&gt;
+&lt;p&gt;Your code should quickly find a solution for:&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l tinyMaze -p SearchAgent&lt;/pre&gt;
+&lt;pre&gt;python pacman.py -l mediumMaze -p SearchAgent&lt;/pre&gt;
+&lt;pre&gt;python pacman.py -l bigMaze -z .5 -p SearchAgent&lt;/pre&gt;
+&lt;p&gt;The Pacman board will show an overlay of the states explored, and the order in which they were explored (brighter red means earlier exploration). Is the exploration order what you would have expected? Does Pacman actually go to all the explored squares on his way to the goal?&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; If you use a &lt;code&gt;Stack&lt;/code&gt; as your data structure, the solution found by your DFS algorithm for &lt;code&gt;mediumMaze&lt;/code&gt; should have a length of 130 (provided you push successors onto the fringe in the order provided by getSuccessors; you might get 246 if you push them in the reverse order). Is this a least cost solution? If not, think about what depth-first search is doing wrong.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_3" aria-labelledby="tab_3" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_9c91a74f730b41a7877eed66fe5fe2a4" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/d6bb45e7f9df48329a1c9978ffeac0f5"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_d6bb45e7f9df48329a1c9978ffeac0f5" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q2"&gt;&lt;/a&gt;Question 2 (3 points): Breadth First Search&lt;/h3&gt;
+&lt;p&gt;Implement the breadth-first search (BFS) algorithm in the &lt;code&gt;breadthFirstSearch&lt;/code&gt; function in &lt;code&gt;search.py&lt;/code&gt;. Again, write a graph search algorithm that avoids expanding any already visited states. Test your code the same way you did for depth-first search.&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l mediumMaze -p SearchAgent -a fn=bfs&lt;/pre&gt;
+&lt;pre&gt;python pacman.py -l bigMaze -p SearchAgent -a fn=bfs -z .5&lt;/pre&gt;
+&lt;p&gt;Does BFS find a least cost solution? If not, check your implementation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; If Pacman moves too slowly for you, try the option &lt;code&gt;--frameTime 0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; If you've written your search code generically, your code should work equally well for the eight-puzzle search problem without any changes.&lt;/p&gt;
+&lt;pre&gt;python eightpuzzle.py&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_4" aria-labelledby="tab_4" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_6272edb687cf42f0b756b0180dc83ab2" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/5f6510ca78d548c6889ff8b07c015e24"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_5f6510ca78d548c6889ff8b07c015e24" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q3"&gt;&lt;/a&gt;Question 3 (3 points): Varying the Cost Function&lt;/h3&gt;
+&lt;p&gt;While BFS will find a fewest-actions path to the goal, we might want to find paths that are "best" in other senses. Consider &lt;code&gt;mediumDottedMaze&lt;/code&gt; and &lt;code&gt;mediumScaryMaze&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;By changing the cost function, we can encourage Pacman to find different paths. For example, we can charge more for dangerous steps in ghost-ridden areas or less for steps in food-rich areas, and a rational Pacman agent should adjust its behavior in response.&lt;/p&gt;
+&lt;p&gt;Implement the uniform-cost graph search algorithm in the &lt;code&gt;uniformCostSearch&lt;/code&gt; function in &lt;code&gt;search.py&lt;/code&gt;. We encourage you to look through &lt;code&gt;util.py&lt;/code&gt; for some data structures that may be useful in your implementation. You should now observe successful behavior in all three of the following layouts, where the agents below are all UCS agents that differ only in the cost function they use (the agents and cost functions are written for you):&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l mediumMaze -p SearchAgent -a fn=ucs&lt;/pre&gt;
+&lt;pre&gt;python pacman.py -l mediumDottedMaze -p StayEastSearchAgent&lt;/pre&gt;
+&lt;pre&gt;python pacman.py -l mediumScaryMaze -p StayWestSearchAgent&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; You should get very low and very high path costs for the &lt;code&gt;StayEastSearchAgent&lt;/code&gt; and &lt;code&gt;StayWestSearchAgent&lt;/code&gt; respectively, due to their exponential cost functions (see &lt;code&gt;searchAgents.py&lt;/code&gt; for details).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_5" aria-labelledby="tab_5" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_141e77949a0f4a88954d91423ddd24f9" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/7f1e60cbab404f3380b7db5ed6623ca2"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_7f1e60cbab404f3380b7db5ed6623ca2" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q4"&gt;&lt;/a&gt;Question 4 (3 points): A* search&lt;/h3&gt;
+&lt;p&gt;Implement A* graph search in the empty function &lt;code&gt;aStarSearch&lt;/code&gt; in &lt;code&gt;search.py&lt;/code&gt;. A* takes a heuristic function as an argument. Heuristics take two arguments: a state in the search problem (the main argument), and the problem itself (for reference information). The &lt;code&gt;nullHeuristic&lt;/code&gt; heuristic function in &lt;code&gt;search.py&lt;/code&gt; is a trivial example.&lt;/p&gt;
+&lt;p&gt;You can test your A* implementation on the original problem of finding a path through a maze to a fixed position using the Manhattan distance heuristic (implemented already as &lt;code&gt;manhattanHeuristic&lt;/code&gt; in &lt;code&gt;searchAgents.py&lt;/code&gt;).&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l bigMaze -z .5 -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic&lt;/pre&gt;
+&lt;p&gt;You should see that A* finds the optimal solution slightly faster than uniform cost search (about 549 vs. 620 search nodes expanded in our implementation, but ties in priority may make your numbers differ slightly). What happens on &lt;code&gt;openMaze&lt;/code&gt; for the various search strategies?&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_6" aria-labelledby="tab_6" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_8be8da424e1b4833b339724505c1bd1b" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/301fefcdab77452fb374165d1bd8b8ff"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_301fefcdab77452fb374165d1bd8b8ff" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q5"&gt;&lt;/a&gt;Question 5 (3 points): Finding All the Corners&lt;/h3&gt;
+&lt;p&gt;The real power of A* will only be apparent with a more challenging search problem. Now, it's time to formulate a new problem and design a heuristic for it.&lt;/p&gt;
+&lt;p&gt;In &lt;em&gt;corner mazes&lt;/em&gt;, there are four dots, one in each corner. Our new search problem is to find the shortest path through the maze that touches all four corners (whether the maze actually has food there or not). Note that for some mazes like &lt;code&gt;tinyCorners&lt;/code&gt;, the shortest path does not always go to the closest food first! &lt;em&gt;Hint&lt;/em&gt;: the shortest path through &lt;code&gt;tinyCorners&lt;/code&gt; takes 28 steps.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Note: Make sure to complete Question 2 before working on Question 5, because Question 5 builds upon your answer for Question 2.&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Implement the &lt;code&gt;CornersProblem&lt;/code&gt; search problem in &lt;code&gt;searchAgents.py&lt;/code&gt;. You will need to choose a state representation that encodes all the information necessary to detect whether all four corners have been reached. Now, your search agent should solve:&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l tinyCorners -p SearchAgent -a fn=bfs,prob=CornersProblem&lt;/pre&gt;
+&lt;pre&gt;python pacman.py -l mediumCorners -p SearchAgent -a fn=bfs,prob=CornersProblem&lt;/pre&gt;
+&lt;p&gt;To receive full credit, you need to define an abstract state representation that &lt;em&gt;does not&lt;/em&gt; encode irrelevant information (like the position of ghosts, where extra food is, etc.). In particular, do not use a Pacman &lt;code&gt;GameState&lt;/code&gt; as a search state. Your code will be very, very slow if you do (and also wrong).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; The only parts of the game state you need to reference in your implementation are the starting Pacman position and the location of the four corners.&lt;/p&gt;
+&lt;p&gt;Our implementation of &lt;code&gt;breadthFirstSearch&lt;/code&gt; expands just under 2000 search nodes on &lt;code&gt;mediumCorners&lt;/code&gt;. However, heuristics (used with A* search) can reduce the amount of searching required.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_7" aria-labelledby="tab_7" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_120be17a6e7f4a3fbd8b5c73dbbd5d29" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/01baa218665646529eccb4ee52336faa"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_01baa218665646529eccb4ee52336faa" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q6"&gt;&lt;/a&gt;Question 6 (3 points): Corners Problem: Heuristic&lt;/h3&gt;
+&lt;p&gt;&lt;i&gt;Note: Make sure to complete Question 4 before working on Question 6, because Question 6 builds upon your answer for Question 4.&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Implement a non-trivial, consistent heuristic for the &lt;code&gt;CornersProblem&lt;/code&gt; in &lt;code&gt;cornersHeuristic&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python pacman.py -l mediumCorners -p AStarCornersAgent -z 0.5&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;code&gt; AStarCornersAgent&lt;/code&gt; is a shortcut for&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-p SearchAgent -a fn=aStarSearch,prob=CornersProblem,heuristic=cornersHeuristic&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Admissibility vs. Consistency:&lt;/b&gt;&lt;/em&gt; Remember, heuristics are just functions that take search states and return numbers that estimate the cost to a nearest goal. More effective heuristics will return values closer to the actual goal costs. To be &lt;em&gt;admissible&lt;/em&gt;, the heuristic values must be lower bounds on the actual shortest path cost to the nearest goal (and non-negative). To be &lt;em&gt;consistent&lt;/em&gt;, it must additionally hold that if an action has cost &lt;em&gt;c&lt;/em&gt;, then taking that action can only cause a drop in heuristic of at most &lt;em&gt;c&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Remember that admissibility isn't enough to guarantee correctness in graph search -- you need the stronger condition of consistency. However, admissible heuristics are usually also consistent, especially if they are derived from problem relaxations. Therefore it is usually easiest to start out by brainstorming admissible heuristics. Once you have an admissible heuristic that works well, you can check whether it is indeed consistent, too. The only way to guarantee consistency is with a proof. However, inconsistency can often be detected by verifying that for each node you expand, its successor nodes are equal or higher in in f-value. Moreover, if UCS and A* ever return paths of different lengths, your heuristic is inconsistent. This stuff is tricky!&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Non-Trivial Heuristics:&lt;/b&gt;&lt;/em&gt; The trivial heuristics are the ones that return zero everywhere (UCS) and the heuristic which computes the true completion cost. The former won't save you any time, while the latter will timeout the autograder. You want a heuristic which reduces total compute time, though for this assignment the autograder will only check node counts (aside from enforcing a reasonable time limit).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;b&gt;Grading:&lt;/b&gt;&lt;/em&gt; Your heuristic must be a non-trivial non-negative consistent heuristic to receive any points. Make sure that your heuristic returns 0 at every goal state and never returns a negative value. Depending on how few nodes your heuristic expands, you'll be graded:&lt;/p&gt;
+&lt;table align="center" border="1" cellspacing="1" cellpadding="5"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;th&gt;Number of nodes expanded&lt;/th&gt;&lt;th&gt;Grade&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;more than 2000&lt;/td&gt;
+&lt;td&gt;0/3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 2000&lt;/td&gt;
+&lt;td&gt;1/3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 1600&lt;/td&gt;
+&lt;td&gt;2/3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 1200&lt;/td&gt;
+&lt;td&gt;3/3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remember:&lt;/em&gt; If your heuristic is inconsistent, you will receive &lt;em&gt;no&lt;/em&gt; credit, so be careful!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_8" aria-labelledby="tab_8" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_67891b993ebf4b8c8b905b2b9b2fc506" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/13506a906c3b46009bef149ac5463ad5"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_13506a906c3b46009bef149ac5463ad5" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q7"&gt;&lt;/a&gt;Question 7 (4 points): Eating All The Dots&lt;/h3&gt;
+&lt;p&gt;Now we'll solve a hard search problem: eating all the Pacman food in as few steps as possible. For this, we'll need a new search problem definition which formalizes the food-clearing problem: &lt;code&gt;FoodSearchProblem&lt;/code&gt; in &lt;code&gt;searchAgents.py&lt;/code&gt; (implemented for you). A solution is defined to be a path that collects all of the food in the Pacman world. For the present project, solutions do not take into account any ghosts or power pellets; solutions only depend on the placement of walls, regular food and Pacman. (Of course ghosts can ruin the execution of a solution! We'll get to that in the next project.) If you have written your general search methods correctly, &lt;code&gt;A*&lt;/code&gt; with a null heuristic (equivalent to uniform-cost search) should quickly find an optimal solution to &lt;code&gt;testSearch&lt;/code&gt; with no code change on your part (total cost of 7).&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l testSearch -p AStarFoodSearchAgent&lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt;&lt;code&gt; AStarFoodSearchAgent&lt;/code&gt; is a shortcut for &lt;code&gt;-p SearchAgent -a fn=astar,prob=FoodSearchProblem,heuristic=foodHeuristic&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You should find that UCS starts to slow down even for the seemingly simple &lt;code&gt;tinySearch&lt;/code&gt;. As a reference, our implementation takes 2.5 seconds to find a path of length 27 after expanding 5057 search nodes.&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;Note: Make sure to complete Question 4 before working on Question 7, because Question 7 builds upon your answer for Question 4.&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Fill in &lt;code&gt;foodHeuristic&lt;/code&gt; in &lt;code&gt;searchAgents.py&lt;/code&gt; with a &lt;emph&gt; consistent &lt;/emph&gt; heuristic for the &lt;code&gt;FoodSearchProblem&lt;/code&gt;. Try your agent on the &lt;code&gt;trickySearch&lt;/code&gt; board:&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l trickySearch -p AStarFoodSearchAgent&lt;/pre&gt;
+&lt;p&gt;Our UCS agent finds the optimal solution in about 13 seconds, exploring over 16,000 nodes.&lt;/p&gt;
+&lt;p&gt;Any non-trivial non-negative consistent heuristic will receive 1 point. Make sure that your heuristic returns 0 at every goal state and never returns a negative value. Depending on how few nodes your heuristic expands, you'll get additional points:&lt;/p&gt;
+&lt;table align="center" border="1" cellspacing="1" cellpadding="5"&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;th&gt;Number of nodes expanded&lt;/th&gt;&lt;th&gt;Grade&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;more than 15000&lt;/td&gt;
+&lt;td&gt;1/4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 15000&lt;/td&gt;
+&lt;td&gt;2/4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 12000&lt;/td&gt;
+&lt;td&gt;3/4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 9000&lt;/td&gt;
+&lt;td&gt;4/4 (full credit; medium)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;at most 7000&lt;/td&gt;
+&lt;td&gt;5/4 (optional extra credit; hard)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Remember:&lt;/em&gt; If your heuristic is inconsistent, you will receive &lt;em&gt;no&lt;/em&gt; credit, so be careful! Can you solve &lt;code&gt;mediumSearch&lt;/code&gt; in a short time? If so, we're either very, very impressed, or your heuristic is inconsistent.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_9" aria-labelledby="tab_9" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_2587634d637a4335b66233703880275d" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/4722718cab5e4b9a908db253a5735072"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_4722718cab5e4b9a908db253a5735072" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;div class="project"&gt;
+&lt;h3&gt;&lt;a name="Q8"&gt;&lt;/a&gt;Question 8 (3 points): Suboptimal Search&lt;/h3&gt;
+&lt;p&gt;Sometimes, even with A* and a good heuristic, finding the optimal path through all the dots is hard. In these cases, we'd still like to find a reasonably good path, quickly. In this section, you'll write an agent that always greedily eats the closest dot. &lt;code&gt;ClosestDotSearchAgent&lt;/code&gt; is implemented for you in &lt;code&gt;searchAgents.py&lt;/code&gt;, but it's missing a key function that finds a path to the closest dot.&lt;/p&gt;
+&lt;p&gt;Implement the function &lt;code&gt;findPathToClosestDot&lt;/code&gt; in &lt;code&gt;searchAgents.py&lt;/code&gt;. Our agent solves this maze (suboptimally!) in under a second with a path cost of 350:&lt;/p&gt;
+&lt;pre&gt;python pacman.py -l bigSearch -p ClosestDotSearchAgent -z .5 &lt;/pre&gt;
+&lt;p&gt;&lt;em&gt;Hint:&lt;/em&gt; The quickest way to complete &lt;code&gt;findPathToClosestDot&lt;/code&gt; is to fill in the &lt;code&gt;AnyFoodSearchProblem&lt;/code&gt;, which is missing its goal test. Then, solve that problem with an appropriate search function. The solution should be very short!&lt;/p&gt;
+&lt;p&gt;Your &lt;code&gt;ClosestDotSearchAgent&lt;/code&gt; won't always find the shortest possible path through the maze. Make sure you understand why and try to come up with a small example where repeatedly going to the closest dot does not result in finding the shortest path for eating all the dots.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_10" aria-labelledby="tab_10" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_cfded9cad73e44139bb3293404b389b3" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/fa02e368f07d4fea8837bd33775cea3d"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_fa02e368f07d4fea8837bd33775cea3d" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "HTMLModule"}
+  &lt;/script&gt;
+  &lt;h3&gt;&lt;a name="Glossary"&gt;&lt;/a&gt;Object Glossary&lt;/h3&gt;
+&lt;p&gt;Here's a glossary of the key objects in the code base related to search problems, for your reference:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SearchProblem (search.py)&lt;/code&gt;&lt;br /&gt;A SearchProblem is an abstract object that represents the state space, successor function, costs, and goal state of a problem. You will interact with any SearchProblem only through the methods defined at the top of &lt;code&gt;search.py&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;PositionSearchProblem (searchAgents.py)&lt;/code&gt;&lt;br /&gt;A specific type of SearchProblem that you will be working with --- it corresponds to searching for a single pellet in a maze.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;CornersProblem (searchAgents.py)&lt;/code&gt;&lt;br /&gt;A specific type of SearchProblem that you will define --- it corresponds to searching for a path through all four corners of a maze.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FoodSearchProblem (searchAgents.py)&lt;/code&gt;&lt;br /&gt;A specific type of SearchProblem that you will be working with --- it corresponds to searching for a way to eat all the pellets in a maze.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Search Function&lt;/code&gt;&lt;br /&gt;A search function is a function which takes an instance of SearchProblem as a parameter, runs some algorithm, and returns a sequence of actions that lead to a goal. Example of search functions are &lt;code&gt;depthFirstSearch&lt;/code&gt; and &lt;code&gt;breadthFirstSearch&lt;/code&gt;, which you have to write. You are provided &lt;code&gt;tinyMazeSearch&lt;/code&gt; which is a very bad search function that only works correctly on &lt;code&gt;tinyMaze.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SearchAgent&lt;/code&gt;&lt;br /&gt;&lt;code&gt;SearchAgent&lt;/code&gt; is a class which implements an Agent (an object that interacts with the world) and does its planning through a search function. The &lt;code&gt;SearchAgent&lt;/code&gt; first uses the search function provided to make a plan of actions to take to reach the goal state, and then executes the actions one at a time.&lt;/p&gt;
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_contents_11" aria-labelledby="tab_11" aria-hidden="true" class="seq_contents tex2jax_ignore asciimath2jax_ignore">
+    &lt;div class="xblock xblock-student_view xblock-student_view-vertical" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_b61d978623134dd5a0cedb54d5320acd" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;div class="vert-mod"&gt;
+  &lt;div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/problem/2efc16e499f243298673515be21fc1ec"&gt;
+    &lt;div class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="problem" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_problem;_2efc16e499f243298673515be21fc1ec" data-type="Problem" data-course-id="BerkeleyX/CS188x_1/1T2013"&gt;
+  &lt;script type="json/xblock-args" class="xblock-json-init-args"&gt;
+    {"xmodule-type": "Problem"}
+  &lt;/script&gt;
+  &lt;div id="problem_i4x-BerkeleyX-CS188x_1-problem-2efc16e499f243298673515be21fc1ec" class="problems-wrapper" data-problem-id="i4x://BerkeleyX/CS188x_1/problem/2efc16e499f243298673515be21fc1ec" data-url="/courses/BerkeleyX/CS188x_1/1T2013/xblock/i4x:;_;_BerkeleyX;_CS188x_1;_problem;_2efc16e499f243298673515be21fc1ec/handler/xmodule_handler" data-progress_status="none" data-progress_detail="0/25"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+  </div>
+  <div id="seq_content" aria-labelledby="tab_0">
+    <div class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_vertical;_4f2701c8cb8349b88152d8b17abb7ab1" data-block-type="vertical" data-course-id="BerkeleyX/CS188x_1/1T2013">
+  <div class="vert-mod">
+  <div class="vert vert-0" data-id="i4x://BerkeleyX/CS188x_1/html/3f14673476a845bead2b1275dde82b13">
+    <div class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule xblock-initialized" data-runtime-class="LmsRuntime" data-init="XBlockToXModuleShim" data-block-type="html" data-request-token="c73e50d0a99811e592210ae43d96b52f" data-runtime-version="1" data-usage-id="i4x:;_;_BerkeleyX;_CS188x_1;_html;_3f14673476a845bead2b1275dde82b13" data-type="HTMLModule" data-course-id="BerkeleyX/CS188x_1/1T2013">
+  
+  <h2 class="project_title">Project 1: Search in Pacman</h2>
+<div class="project">
+<blockquote><center><img src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/maze.png" width="400px"></center>
+<p></p>
+<center>All those colored walls,<br> Mazes give Pacman the blues,<br> So teach him to search.</center>
+<p></p>
+</blockquote>
+<h3><a name="Introduction"></a>Introduction</h3>
+<p>In this project, your Pacman agent will find paths through his maze world, both to reach a particular location and to collect food efficiently. You will build general search algorithms and apply them to Pacman scenarios.</p>
+<p>As in Project 0, this project includes an autograder for you to grade your answers on your machine. This can be run with the command:</p>
+<pre>python autograder.py</pre>
+<p>See the autograder tutorial in Project 0 for more information about using the autograder.</p>
+<p>The code for this project consists of several Python files, some of which you will need to read and understand in order to complete the assignment, and some of which you can ignore. You can download all the code and supporting files as a <a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/search.zip">zip archive</a>.</p>
+<table class="intro" border="0" cellpadding="10">
+<tbody>
+<tr>
+<td colspan="2"><b>Files you'll edit:</b></td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/search.html">search.py</a></code></td>
+<td><text>Where all of your search algorithms will reside.</text></td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/searchAgents.html">searchAgents.py</a></code></td>
+<td>Where all of your search-based agents will reside.</td>
+</tr>
+<tr>
+<td colspan="2"><b>Files you might want to look at:</b></td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/pacman.html">pacman.py</a></code></td>
+<td>The main file that runs Pacman games. This file describes a Pacman GameState type, which you use in this project.</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/game.html">game.py</a></code></td>
+<td>The logic behind how the Pacman world works. This file describes several supporting types like AgentState, Agent, Direction, and Grid.</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/util.html">util.py</a></code></td>
+<td>Useful data structures for implementing search algorithms.</td>
+</tr>
+<tr>
+<td colspan="2"><b>Supporting files you can ignore:</b></td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/graphicsDisplay.html">graphicsDisplay.py</a></code></td>
+<td>Graphics for Pacman</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/graphicsUtils.html">graphicsUtils.py</a></code></td>
+<td>Support for Pacman graphics</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/textDisplay.html">textDisplay.py</a></code></td>
+<td>ASCII graphics for Pacman</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/ghostAgents.html">ghostAgents.py</a></code></td>
+<td>Agents to control ghosts</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/keyboardAgents.html">keyboardAgents.py</a></code></td>
+<td>Keyboard interfaces to control Pacman</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/layout.html">layout.py</a></code></td>
+<td>Code for reading layout files and storing their contents</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/autograder.html">autograder.py</a></code></td>
+<td>Project autograder</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/testParser.html">testParser.py</a></code></td>
+<td>Parses autograder test and solution files</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/testClasses.html">testClasses.py</a></code></td>
+<td>General autograding test classes</td>
+</tr>
+<tr>
+<td><code>test_cases/</code></td>
+<td>Directory containing the test cases for each question</td>
+</tr>
+<tr>
+<td><code><a href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/searchTestClasses.html">searchTestClasses.py</a></code></td>
+<td>Project 1 specific autograding test classes</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><strong>Files to Edit and Submit:</strong> You will fill in portions of <code><a target="_blank" href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/search.html">search.py</a></code> and <code><a target="_blank" href="https://s3-us-west-2.amazonaws.com/cs188websitecontent/projects/release/search/v1/001/docs/searchAgents.html">searchAgents.py</a></code> during the assignment. You should submit these files with your code and comments. Please <em>do not</em> change the other files in this distribution or submit any of our original files other than these files.</p>
+<p><strong>Evaluation:</strong> Your code will be autograded for technical correctness. Please <em>do not</em> change the names of any provided functions or classes within the code, or you will wreak havoc on the autograder. However, the correctness of your implementation -- not the autograder's judgements -- will be the final judge of your score. If necessary, we will review and grade assignments individually to ensure that you receive due credit for your work.</p>
+<p><strong>Academic Dishonesty:</strong> We will be checking your code against other submissions in the class for logical redundancy. If you copy someone else's code and submit it with minor changes, we will know. These cheat detectors are quite hard to fool, so please don't try. We trust you all to submit your own work only; <em>please</em> don't let us down. If you do, we will pursue the strongest consequences available to us.</p>
+<p><strong>Getting Help:</strong> You are not alone! If you find yourself stuck on something, contact the course staff for help. Office hours, section, and the discussion forum are there for your support; please use them. If you can't make our office hours, let us know and we will schedule more. We want these projects to be rewarding and instructional, not frustrating and demoralizing. But, we don't know when or how to help unless you ask.</p>
+<p><strong>Discussion:</strong> Please be careful not to post spoilers.</p>
+</div>
+</div>
+
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+  <nav class="sequence-bottom" aria-label="Section">
+    <button class="sequence-nav-button button-previous disabled" disabled="disabled">
+        <span class="icon fa fa-chevron-prev" aria-hidden="true"></span><span class="sr">Previous</span>
+    </button>
+    <button class="sequence-nav-button button-next">
+        <span class="icon fa fa-chevron-next" aria-hidden="true"></span><span class="sr">Next</span>
+    </button>
+  </nav>
+</div>
+
+<script type="text/javascript">
+  var sequenceNav;
+  $(document).ready(function() {
+    sequenceNav = new SequenceNav($('.sequence-nav'));
+  });
+</script>
+
+</div>
+
+    </section>
+  </div>
+</div>
+<div class="container-footer">
+    <div class="course-license">
+      
+
+
+    © <span class="license-text">All Rights Reserved</span>
+
+    </div>
+</div>
+
+<nav class="nav-utilities " aria-label="Course Utilities">
+
+</nav>
+
+
+<div id="accessibile-confirm-modal" class="modal" aria-hidden="true">
+  <div class="inner-wrapper" role="dialog" aria-labelledby="accessibile-confirm-title">
+    <button class="close-modal">
+      <i class="icon fa fa-remove"></i>
+      <span class="sr">
+        Close
+      </span>
+    </button>
+
+    <header>
+      <h2 id="accessibile-confirm-title">
+          Confirm
+        <span class="sr">,
+          modal open
+        </span>
+      </h2>
+    </header>
+    <div role="alertdialog" class="status message" tabindex="-1">
+        <p class="message-title"></p>
+    </div>
+    <hr aria-hidden="true">
+    <div class="actions">
+        <button class="dismiss ok-button">OK</button>
+        <button class="dismiss cancel-button" data-dismiss="leanModal">Cancel</button>
+    </div>
+  </div>
+  <a href="https://courses.edx.org/courses/BerkeleyX/CS188x_1/1T2013/courseware/eafff8d8427440069a749c1b825c0561/6171e5fdfd8645c98cdcdf53dfea1880/#accessibile-confirm-modal" rel="leanModal" id="confirm_open_button" style="display:none">open</a>
+</div>
+
+<script type="text/javascript">
+var accessible_confirm = function(message, callback) {
+    $("#accessibile-confirm-modal .cancel-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+    });
+    $("#accessibile-confirm-modal .ok-button").click(function(){
+        $("#accessibile-confirm-modal .close-modal").click();
+        callback();
+    });
+
+    accessible_modal("#accessibile-confirm-modal #confirm_open_button", "#accessibile-confirm-modal .close-modal", "#accessibile-confirm-modal", ".content-wrapper");
+    $("#accessibile-confirm-modal #confirm_open_button").click();
+    $("#accessibile-confirm-modal .message-title").html(message);
+};
+</script>
+
+
+      
+    </div>
+
+        
+
+
+
+  
+
+
+
+<footer id="footer-edx-v3" role="contentinfo" aria-label="Page Footer">
+    <h2 class="sr footer-about-title">About edX</h2>
+    <div class="footer-content-wrapper">
+      <div class="footer-logo">
+          <img alt="edX logo" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/edx-header-logo.517a627deaad.png">
+      </div>
+
+      <div class="site-details">
+          <nav class="site-nav" aria-label="About edX">
+              <a href="https://www.edx.org/about-us">About</a>
+              <a href="https://www.edx.org/blog">Blog</a>
+              <a href="https://www.edx.org/news-announcements">News</a>
+              <a href="https://support.edx.org/">Help Center</a>
+              <a href="https://www.edx.org/contact">Contact</a>
+              <a href="https://www.edx.org/careers">Careers</a>
+              <a href="https://www.edx.org/donate">Donate</a>
+              <a href="https://www.edx.org/sitemap">Sitemap</a>
+          </nav>
+          <nav class="legal-notices" aria-label="Legal">
+              <a href="https://www.edx.org/edx-terms-service">Terms of Service &amp; Honor Code</a>
+              <a href="https://www.edx.org/edx-privacy-policy">Privacy Policy</a>
+              <a href="https://www.edx.org/accessibility">Accessibility Policy</a>
+          </nav>
+          <p class="copyright">© edX Inc.  All rights reserved except where noted.  EdX, Open edX and the edX and Open EdX logos are registered trademarks or trademarks of edX Inc.</p>
+
+          <div class="openedx-link">
+            <a href="http://open.edx.org/" title="Powered by Open edX">
+              <img alt="Powered by Open edX" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/edx-openedx-logo-tag.png" width="140">
+            </a>
+          </div>
+      </div>
+
+      <div class="external-links">
+        <div class="social-media-links">
+          <a href="http://www.facebook.com/EdxOnline" class="sm-link external" title="Facebook" rel="noreferrer">
+            <span class="icon fa fa-facebook-square" aria-hidden="true"></span>
+            <span class="sr">Like edX on Facebook</span>
+          </a>
+          <a href="https://twitter.com/edXOnline" class="sm-link external" title="Twitter" rel="noreferrer">
+            <span class="icon fa fa-twitter" aria-hidden="true"></span>
+            <span class="sr">Follow edX on Twitter</span>
+          </a>
+          <a href="https://www.youtube.com/user/edxonline?sub_confirmation=1" class="sm-link external" title="Youtube" rel="noreferrer">
+            <span class="icon fa fa-youtube" aria-hidden="true"></span>
+            <span class="sr">Subscribe to the edX YouTube channel</span>
+          </a>
+          <a href="http://www.linkedin.com/company/edx" class="sm-link external" title="LinkedIn" rel="noreferrer">
+            <span class="icon fa fa-linkedin-square" aria-hidden="true"></span>
+            <span class="sr">Follow edX on LinkedIn</span>
+          </a>
+          <a href="https://plus.google.com/+edXOnline" class="sm-link external" title="Google+" rel="noreferrer">
+            <span class="icon fa fa-google-plus-square" aria-hidden="true"></span>
+            <span class="sr">Follow edX on Google+</span>
+          </a>
+          <a href="http://www.reddit.com/r/edx" class="sm-link external" title="Reddit" rel="noreferrer">
+            <span class="icon fa fa-reddit" aria-hidden="true"></span>
+            <span class="sr">Subscribe to the edX subreddit</span>
+          </a>
+        </div>
+
+        <div class="mobile-app-links">
+          <a href="https://itunes.apple.com/us/app/edx/id945480667?mt=8" class="app-link external">
+            <img alt="Download the edX mobile app from the Apple App Store" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/app_store_badge_135x40.d0558d910630.svg">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=org.edx.mobile" class="app-link external">
+            <img alt="Download the edX mobile app from Google Play" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/google_play_badge_45.c02590f4a6f1.png">
+          </a>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+
+
+  </div>
+
+  
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/jquery.scrollTo-1.4.2-min.4aa3e2dfa312.js"></script>
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/jquery.flot.d3d45ff0c6a8.js"></script>
+
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/codemirror-compressed.dd4b74f7c5fe.js"></script>
+
+  
+    <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/lms-courseware.94e582ddac20.js" charset="utf-8"></script>
+
+
+  
+    <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/discussion.9309e213b3dc.js" charset="utf-8"></script>
+
+
+
+  
+
+
+
+
+
+<script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: {CHTMLpreview: false}
+    };
+</script>
+
+<script type="text/x-mathjax-config;executed=true">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [
+        ["\\(","\\)"],
+        ['[mathjaxinline]','[/mathjaxinline]']
+      ],
+      displayMath: [
+        ["\\[","\\]"],
+        ['[mathjax]','[/mathjax]']
+      ]
+    }
+  });
+</script>
+<script type="text/x-mathjax-config;executed=true">
+
+  // In order to eliminate all flashing during interactive
+  // preview, it is necessary to set processSectionDelay to 0
+  // (remove delay between input and output phases). This
+  // effectively disables fast preview, regardless of
+  // the fast preview setting as shown in the context menu.
+  MathJax.Hub.processSectionDelay = 0;
+
+  MathJax.Hub.signal.Interest(function(message) {
+    if(message[0] === "End Math") {
+        set_mathjax_display_div_settings();
+    }
+  });
+  function set_mathjax_display_div_settings() {
+    $('.MathJax_Display').each(function( index ) {
+      this.setAttribute('tabindex', '0');
+      this.setAttribute('aria-live', 'off');
+      this.removeAttribute('role');
+      this.removeAttribute('aria-readonly');
+    });
+  }
+</script>
+
+
+<!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+     It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+     MathJax extension libraries -->
+<script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/MathJax.js"></script>
+
+
+
+  <script type="text/javascript">
+    var $$course_id = "BerkeleyX/CS188x_1/1T2013";
+
+    $(function(){
+        $(".ui-accordion-header a, .ui-accordion-content .subtitle-name").each(function() {
+          var elemText = $(this).text().replace(/^\s+|\s+$/g,''); // Strip leading and trailing whitespace
+          var wordArray = elemText.split(" ");
+          var finalTitle = "";
+          if (wordArray.length > 0) {
+            for (i=0;i<=wordArray.length-1;i++) {
+              finalTitle += wordArray[i];
+              if (i == (wordArray.length-2)) {
+                finalTitle += "&nbsp;";
+              } else if (i == (wordArray.length-1)) {
+                // Do nothing
+              } else {
+                finalTitle += " ";
+              }
+            }
+          }
+          $(this).html(finalTitle);
+        });
+      });
+  </script>
+
+
+
+
+      <!-- begin segment footer -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            analytics.identify("2368806", {
+              email: "troy.h.hughes@gmail.com",
+              username: "thhughes"
+            });
+        });
+    </script>
+    <!-- end segment footer -->
+
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/noreferrer.aa62a3e70ffa.js" charset="utf-8"></script>
+  <script type="text/javascript" src="./Introduction _ Project 1_ Search _ CS188x_1 Courseware _ edX_files/navigation.17df676f9045.js" charset="utf-8"></script>
+  
+
+
+
+
+
+<!-- Performance beacon for onload times -->
+<script>
+  (function () {
+    var sample_rate = 0.05;
+    var roll = Math.floor(Math.random() * 100)/100;
+    var onloadBeaconSent = false;
+
+    if(roll < sample_rate){
+      $(window).load(function() {
+        setTimeout(function(){
+          var t = window.performance.timing;
+
+          var data = {
+            event: "onload",
+            value: t.loadEventEnd - t.navigationStart,
+            page: window.location.href,
+          };
+
+          if (!onloadBeaconSent) {
+            $.ajax({method: "POST", url: "/performance", data: data});
+          }
+          onloadBeaconSent = true;
+        }, 0);
+      });
+    }
+  }());
+</script>
+<div id="reader-feedback" class="sr" style="display:none" aria-hidden="false" aria-atomic="true" aria-live="assertive"></div><div id="lean_overlay"></div><div class="tooltip" style="display: none; opacity: 0;"></div><div><div style="display: block; position: absolute; top: -999px; left: -999px; font-size: 48px; width: auto; height: auto; line-height: normal; margin: 0px; padding: 0px; font-variant: normal; white-space: nowrap; font-weight: 400; font-style: normal; font-family: FontAwesome, sans-serif;">AxmTYklsjo190QW</div><div style="display: block; position: absolute; top: -999px; left: -999px; font-size: 48px; width: auto; height: auto; line-height: normal; margin: 0px; padding: 0px; font-variant: normal; white-space: nowrap; font-weight: 400; font-style: normal; font-family: FontAwesome, serif;">AxmTYklsjo190QW</div></div><div style="position: absolute; width: 0px; height: 0px; overflow: hidden; padding: 0px; border: 0px; margin: 0px;"><div id="MathJax_Font_Test" style="position: absolute; visibility: hidden; top: 0px; left: 0px; width: auto; padding: 0px; border: 0px; margin: 0px; white-space: nowrap; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; font-size: 40px; font-weight: normal; font-style: normal; font-family: STIXSizeOneSym, sans-serif;"></div></div></body></html>
